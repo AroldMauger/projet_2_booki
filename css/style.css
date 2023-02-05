@@ -24,11 +24,76 @@ li {
     
 }
 
-a {
+a.lien_header {
     text-decoration:none;
     color: black;
 }
 
-a:hover {
+a.lien_header:hover {
     color: blue;
+}
+
+fieldset{
+
+}
+.bouton_rechercher {
+    background-color: #0065FC;
+    color: white;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    padding : 14px 16px 14px 16px;
+    font-weight: bold;
+    border: 1px solid #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
+label {
+    background-color: #F2F2F2;
+    padding : 14px 10px 14px 16px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+   
+}
+
+.ville {
+    border: 1px solid #F2F2F2;
+    border-right:none;
+    padding : 14px 16px 14px 16px;
+    margin-right: -3px;
+}
+.filtres {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+}
+
+.lien_filtres {
+    text-decoration:none;
+    color: black;
+}
+
+.types_filtres i {
+    color:blue;
+}
+.selecteur_filtre {
+    border: 2px solid #D9D9D9;
+    border-radius: 15px 15px 15px 15px;
+    margin: 20px;
+    padding : 10px 10px 10px 10px;
+}
+.selecteur_filtre:hover {
+    background-color:#DEEBFF ;
+}
+
+.info_ville i {
+    color:blue;
+    border: 2px solid #D9D9D9;
+    border-radius: 15px 15px 15px 15px;
+    padding : 5px 10px 5px 10px;
+}
+.info_ville {
+    margin-left: 10px;
 }

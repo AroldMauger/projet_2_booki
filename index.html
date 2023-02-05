@@ -18,15 +18,56 @@
             <nav>
                 <ul class="menu_header">
                     <li>
-                         <a href="#">Hébergements</a>
+                         <a class="lien_header" href="#">Hébergements</a>
                      </li>
                      <li>
-                        <a href="#">Activités</a>
+                        <a class="lien_header" href="#">Activités</a>
                     </li>
                 </ul>
              </nav>
 
         </header>
-    
+        <main>
+            <section>
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre-ville ou en pleine nature</p>
+                    <form action="" method="post">
+                        <label for="ville">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </label> 
+                        <input class="ville" type="text" name="ville" id="ville">
+                        <input class="bouton_rechercher" type="submit" value="Rechercher">
+                    </form>
+            </section>
+            <br>
+            <section class="filtres">
+            
+                <div class="types_filtres">
+                    <span>
+                        Filtres
+                    </span>
+                    <span class="selecteur_filtre"> 
+                        <i class="fa-solid fa-money-bill-wave"> </i> 
+                        <a class="lien_filtres" href="#">Économique</a>
+                    </span>
+                    <span class="selecteur_filtre">
+                        <i class="fa-solid fa-person"></i>
+                        <a class="lien_filtres" href="#">Familial</a>
+                    </span>
+                    <span class="selecteur_filtre">
+                        <i class="fa-solid fa-heart"></i>
+                        <a class="lien_filtres" href="#">Romantique</a>
+                    </span>
+                    <span class="selecteur_filtre">
+                        <i class="fa-solid fa-dog"></i>
+                        <a class="lien_filtres" href="#">Animaux autorisés</a>
+                    </span>
+                </div>
+            </section>
+            <div class="info_ville">
+                <i class="fa-solid fa-info"></i>
+                 <span>Plus de 500 logements sont disponibles dans cette ville</span>
+            </div>
+        </main>
     </body>
 </html>
