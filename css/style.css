@@ -1,9 +1,14 @@
+
 .logo_Booki {
     width: 61.09px;
     height: 19px;
     padding: 44px 0px 0px 55px
 }
-
+h1, h2 {
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Raleway';
+}
 header {
     display: flex;
     flex-direction: row;
@@ -12,10 +17,14 @@ header {
 
 li {
     margin:0 30px;
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
-
+p {
+    font-family: 'Raleway', sans-serif;
+}
+span {
+    font-family: 'Raleway', sans-serif;
+}
 .menu_header {
     display: flex;
     padding : 48px 77px 0px 0px;
@@ -39,8 +48,6 @@ fieldset{
 .bouton_rechercher {
     background-color: #0065FC;
     color: white;
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Montserrat', sans-serif;
     padding : 14px 16px 14px 16px;
     font-weight: bold;
     border: 1px solid #0065FC;
@@ -54,25 +61,27 @@ label {
    
 }
 
-.ville {
+.recherche_ville {
     border: 1px solid #F2F2F2;
     border-right:none;
     padding : 14px 16px 14px 16px;
-    margin-right: -3px;
+    font-family: 'Raleway';
+    font-weight: bold;
 }
 .filtres {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 10px 10px 10px;
-    font-family: 'Manrope', sans-serif;
-    font-family: 'Montserrat', sans-serif;
     margin-bottom: 30px;
+    font-weight: 700;
+    font-family: 'Raleway';
 }
 
 .lien_filtres {
     text-decoration:none;
     color: black;
+    padding : 0px 0px 0px 10px;
 }
 
 .types_filtres i {
@@ -96,4 +105,33 @@ label {
 }
 .info_ville {
     margin-left: 10px;
+}
+.annonces_hebergements i {
+    color:blue;
+}
+.populaires i {
+    color:blue;
+}
+
+.hebergements_Marseille {
+   display: flex;
+   flex-direction: row;
+}
+
+.annonces_hebergements {
+    
+}
+.medium_cards {
+    display: flex;
+    flex-flow: row wrap;
+}
+.populaires {
+    display: flex;
+    flex-direction: column;
+}
+aside {
+}
+.lien_cards {
+    text-decoration: none;
+    color: black;
 }
