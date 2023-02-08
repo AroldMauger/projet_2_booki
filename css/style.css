@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    max-width: 1400px;
+}
 
 .logo_Booki {
     width: 61.09px;
@@ -114,24 +120,132 @@ label {
 }
 
 .hebergements_Marseille {
-   display: flex;
-   flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .annonces_hebergements {
-    
+    height: 626px;
+    width: 880px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-right: 20px;
+    padding : 10px 10px 10px 10px;
 }
 .medium_cards {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: 246px 246px 246px;
+    grid-template-rows: 199px 199px;
+    gap: 30px;
+    border-radius: 20px;
+    width: 204px;
+    height: 15px;
+    margin-left: 16px;
+    font-family: 'Raleway';
 }
+
 .populaires {
     display: flex;
     flex-direction: column;
+    height: 625px;
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    margin-left: 20px;
+    padding-left:10px;
 }
 aside {
+    
 }
 .lien_cards {
     text-decoration: none;
     color: black;
+}
+.card {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px #d9d9d9dd;
+    width: 246px;
+    height: 199px;
+}
+
+.etoiles { 
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.card_image {
+    border-radius: 20px 20px 0px 0px;
+    margin-left: 13px;
+    margin-top: 5px;
+    width: 246px;
+    height: 124px;
+}
+.card_image_small {
+    border-radius: 20px 0px 0px 20px;
+    width: 137px;
+    height: 144px;
+}
+
+.content_medium_card {
+    padding-left:15px;
+}
+.smallcard {
+    width: 343px;
+    height: 144px;
+    box-shadow: 5px 5px 5px #d9d9d9dd;
+    display: flex;
+    flex-direction: row;
+    font-family: 'Raleway';
+    border-radius: 20px;
+    margin: 10px;
+    padding : 5px;
+}
+.content_small_card {
+  padding : 0px 0px  0px 15px;
+}
+
+h3 > a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    
+}
+
+.card > div {
+    line-height: 5px;
+}
+.activites_Marseille {
+}
+.large_cards{
+    display: grid;
+    grid-template-columns: 302px 302px 302px 302px;
+    grid-template-rows: 445px ;
+    gap: 50px;
+    border-radius: 20px;
+}
+#largecard1 {
+    display: flex;
+    flex-direction: column;
+
+}
+#largecard2 {
+    display: flex;
+    flex-direction: column;
+}
+#largecard3 {
+    display: flex;
+    flex-direction: column;
+}
+#largecard4 {
+    display: flex;
+    flex-direction: column;
+}
+.lien_cards_activites {
+    text-decoration: none;
+    color: black;
+    object-fit: contain;
 }
