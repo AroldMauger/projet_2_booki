@@ -1,8 +1,7 @@
-*{
-    box-sizing: border-box;
-}
+
 body {
     max-width: 1400px;
+    font-family: 'Raleway';
 }
 
 .logo_Booki {
@@ -13,7 +12,6 @@ body {
 h1, h2 {
     font-weight: 700;
     font-size: 22px;
-    font-family: 'Raleway';
 }
 header {
     display: flex;
@@ -23,14 +21,8 @@ header {
 
 li {
     margin:0 30px;
-    font-family: 'Raleway', sans-serif;
 }
-p {
-    font-family: 'Raleway', sans-serif;
-}
-span {
-    font-family: 'Raleway', sans-serif;
-}
+
 .menu_header {
     display: flex;
     padding : 48px 77px 0px 0px;
@@ -71,7 +63,6 @@ label {
     border: 1px solid #F2F2F2;
     border-right:none;
     padding : 14px 16px 14px 16px;
-    font-family: 'Raleway';
     font-weight: bold;
 }
 .filtres {
@@ -81,7 +72,6 @@ label {
     padding: 10px 10px 10px 10px;
     margin-bottom: 30px;
     font-weight: 700;
-    font-family: 'Raleway';
 }
 
 .lien_filtres {
@@ -142,7 +132,6 @@ label {
     width: 204px;
     height: 15px;
     margin-left: 16px;
-    font-family: 'Raleway';
 }
 
 .populaires {
@@ -199,7 +188,6 @@ aside {
     box-shadow: 5px 5px 5px #d9d9d9dd;
     display: flex;
     flex-direction: row;
-    font-family: 'Raleway';
     border-radius: 20px;
     margin: 10px;
     padding : 5px;
@@ -248,4 +236,28 @@ h3 > a {
     text-decoration: none;
     color: black;
     object-fit: contain;
+}
+footer {
+    margin-top: 60px;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+ul.colonne {
+    list-style-type : none;
+    padding: 0px;
+}
+footer>h3{
+    padding-left : 15px;
+}
+.a_propos {
+    
+}
+.lien_footer {
+    text-decoration: none;
+    color:black;
+}
+.lien_footer:hover {
+    text-decoration: underline;
 }
