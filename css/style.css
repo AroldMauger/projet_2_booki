@@ -28,7 +28,6 @@ li {
     padding : 48px 77px 0px 0px;
     list-style-type : none;
     margin:10px 10px 10px 10px;  
-    
 }
 
 a.lien_header {
@@ -40,9 +39,7 @@ a.lien_header:hover {
     color: blue;
 }
 
-fieldset{
-
-}
+/*BOUTON RECHERCHE*/
 .bouton_rechercher {
     background-color: #0065FC;
     color: white;
@@ -56,15 +53,14 @@ label {
     padding : 14px 10px 14px 16px;
     border: 1px solid #F2F2F2;
     border-radius: 15px 0px 0px 15px;
-   
 }
-
 .recherche_ville {
     border: 1px solid #F2F2F2;
     border-right:none;
     padding : 14px 16px 14px 16px;
     font-weight: bold;
 }
+/*FILTRES*/
 .filtres {
     display: flex;
     flex-direction: row;
@@ -92,7 +88,7 @@ label {
 .selecteur_filtre:hover {
     background-color:#DEEBFF ;
 }
-
+/*INFO VILLE*/
 .info_ville i {
     color:blue;
     border: 2px solid #D9D9D9;
@@ -102,31 +98,35 @@ label {
 .info_ville {
     margin-left: 10px;
 }
-.annonces_hebergements i {
+/*HEBERGEMENTS*/
+#annonces_hebergements i {
     color:blue;
 }
 .populaires i {
     color:blue;
 }
-
+.titre_cards {
+    font-weight: bold;
+}
 .hebergements_Marseille {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.annonces_hebergements {
+#annonces_hebergements {
     height: 626px;
     width: 880px;
     border-radius: 20px;
     background-color: #F2F2F2;
     margin-right: 20px;
-    padding : 10px 10px 10px 10px;
+    padding : 10px 10px 0px 10px;
 }
 .medium_cards {
     display: grid;
     grid-template-columns: 246px 246px 246px;
     grid-template-rows: 199px 199px;
+    justify-content: left;
     gap: 30px;
     border-radius: 20px;
     width: 204px;
@@ -143,9 +143,7 @@ label {
     margin-left: 20px;
     padding-left:10px;
 }
-aside {
-    
-}
+
 .lien_cards {
     text-decoration: none;
     color: black;
@@ -162,7 +160,6 @@ aside {
 
 .etoiles { 
     display: flex;
-    flex-direction: row;
     margin-bottom: 5px;
 }
 
@@ -173,6 +170,7 @@ aside {
     width: 246px;
     height: 124px;
 }
+
 .card_image_small {
     border-radius: 20px 0px 0px 20px;
     width: 137px;
@@ -187,56 +185,67 @@ aside {
     height: 144px;
     box-shadow: 5px 5px 5px #d9d9d9dd;
     display: flex;
-    flex-direction: row;
     border-radius: 20px;
     margin: 10px;
     padding : 5px;
 }
-.content_small_card {
+.text_small_card {
   padding : 0px 0px  0px 15px;
+  text-align: left;
+}
+.content_small_card {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column wrap;
+}
+.content_small_card > .etoiles {
+    padding-left: 15px;
 }
 
 h3 > a {
     text-decoration: none;
     color: black;
     display: flex;
-    
 }
 
 .card > div {
     line-height: 5px;
 }
-.activites_Marseille {
+.afficher_plus {
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
 }
+
+/*ACTIVITÉS MARSEILLE*/
+
 .large_cards{
     display: grid;
     grid-template-columns: 302px 302px 302px 302px;
     grid-template-rows: 445px ;
-    gap: 50px;
-    border-radius: 20px;
+    justify-content: space-between;
+    gap : 20px;
 }
-#largecard1 {
-    display: flex;
-    flex-direction: column;
-
+.large_cards img {
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 90%;
 }
-#largecard2 {
-    display: flex;
-    flex-direction: column;
-}
-#largecard3 {
-    display: flex;
-    flex-direction: column;
-}
-#largecard4 {
-    display: flex;
-    flex-direction: column;
+.large_cards p {
+    margin:10px;
 }
 .lien_cards_activites {
     text-decoration: none;
     color: black;
-    object-fit: contain;
+    display: grid;
+    grid-template-columns: 302px 302px 302px 302px;
+    grid-template-rows: 445px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #d9d9d9dd;
 }
+
+/*BAS DE PAGE*/
 footer {
     margin-top: 60px;
     background-color: #F2F2F2;
@@ -248,16 +257,20 @@ ul.colonne {
     list-style-type : none;
     padding: 0px;
 }
-footer>h3{
-    padding-left : 15px;
+ul.colonne li {
+    padding: 12px;
 }
-.a_propos {
-    
+footer h3{
+    padding-left : 40px;
 }
+
 .lien_footer {
     text-decoration: none;
     color:black;
 }
 .lien_footer:hover {
     text-decoration: underline;
+}
+footer div {
+    flex:1;
 }
