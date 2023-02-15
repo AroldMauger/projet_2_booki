@@ -159,6 +159,7 @@ label {
 .lien_cards {
     text-decoration: none;
     color: black;
+   
     
 }
 .card {
@@ -166,29 +167,36 @@ label {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     box-shadow: 5px 5px 5px #d9d9d9dd;
-}
+    width: 246px;
+    height: 199px;
 
-.etoiles { 
-    display: flex;
-    margin-bottom: 5px;
 }
 
 .card_image {
     border-radius: 20px 20px 0px 0px;
     border: 5px solid #FFFFFF;
+    object-fit: cover;
 }
 
 .card_image_small {
     border-radius: 20px 0px 0px 20px;
-    border: 5px solid #FFFFFF
-
+    border: 5px solid #FFFFFF;
+    object-fit: cover;
 }
 .content_medium_card {
     padding-left:15px;
+    line-height: 9px;
 }
-
+.etoiles {
+    display: flex;
+    padding-bottom: 11px;
+}
+.etoiles >i {
+    font-size: 80%;
+    letter-spacing: 2px;
+}
 .smallcard {
     width: 343px;
     height: 144px;
@@ -232,7 +240,6 @@ h3 > a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap : 43px;
     margin-top: 18px;
-    
 }
 .large_cards img {
     object-fit: cover;
