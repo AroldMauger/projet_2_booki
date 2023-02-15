@@ -1,17 +1,23 @@
 
+*{
+    box-sizing: border-box;
+}
 body {
-    max-width: 1400px;
     font-family: 'Raleway';
+    max-width: 1400px;
+    margin: 0px;
 }
 
 .logo_Booki {
     width: 61.09px;
     height: 19px;
-    padding: 44px 0px 0px 55px
+    margin:44px 0px 0px 55px;
+    
 }
 h1, h2 {
     font-weight: 700;
     font-size: 22px;
+    margin:0px;
 }
 header {
     display: flex;
@@ -39,7 +45,11 @@ a.lien_header:hover {
     color: blue;
 }
 
+main {
+    margin-left: 50px;
+}
 /*BOUTON RECHERCHE*/
+
 .bouton_rechercher {
     background-color: #0065FC;
     color: white;
@@ -99,6 +109,7 @@ label {
     margin-left: 10px;
 }
 /*HEBERGEMENTS*/
+
 #annonces_hebergements i {
     color:blue;
 }
@@ -110,52 +121,53 @@ label {
 }
 .hebergements_Marseille {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin-top: 39px;
 }
 
 #annonces_hebergements {
-    height: 626px;
-    width: 880px;
     border-radius: 20px;
     background-color: #F2F2F2;
-    margin-right: 20px;
-    padding : 10px 10px 0px 10px;
+    margin-right:40px;   
+    padding: 42px 40px 46px 40px;
 }
+
 .medium_cards {
     display: grid;
-    grid-template-columns: 246px 246px 246px;
-    grid-template-rows: 199px 199px;
-    justify-content: left;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 30px;
     border-radius: 20px;
-    width: 204px;
-    height: 15px;
-    margin-left: 16px;
+    margin-bottom: 40px;
+    margin-top:23px;
 }
 
 .populaires {
     display: flex;
     flex-direction: column;
-    height: 625px;
+    gap:33px;
     border-radius: 20px;
     background-color: #F2F2F2;
-    margin-left: 20px;
-    padding-left:10px;
+    padding-left: 37px;
+    padding : 41px 40px 34px 37px;
 }
 
+.header_populaires {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 .lien_cards {
     text-decoration: none;
     color: black;
+    
 }
 .card {
     background-color: white;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     box-shadow: 5px 5px 5px #d9d9d9dd;
-    width: 246px;
-    height: 199px;
 }
 
 .etoiles { 
@@ -165,29 +177,25 @@ label {
 
 .card_image {
     border-radius: 20px 20px 0px 0px;
-    margin-left: 13px;
-    margin-top: 5px;
-    width: 246px;
-    height: 124px;
+    border: 5px solid #FFFFFF;
 }
 
 .card_image_small {
     border-radius: 20px 0px 0px 20px;
-    width: 137px;
-    height: 144px;
-}
+    border: 5px solid #FFFFFF
 
+}
 .content_medium_card {
     padding-left:15px;
 }
+
 .smallcard {
     width: 343px;
     height: 144px;
     box-shadow: 5px 5px 5px #d9d9d9dd;
     display: flex;
     border-radius: 20px;
-    margin: 10px;
-    padding : 5px;
+
 }
 .text_small_card {
   padding : 0px 0px  0px 15px;
@@ -205,12 +213,9 @@ label {
 h3 > a {
     text-decoration: none;
     color: black;
-    display: flex;
 }
 
-.card > div {
-    line-height: 5px;
-}
+
 .afficher_plus {
     font-weight: bold;
     text-decoration: none;
@@ -218,13 +223,16 @@ h3 > a {
 }
 
 /*ACTIVITÉS MARSEILLE*/
+#activites {
+    margin-top: 60px;
+}
 
 .large_cards{
     display: grid;
-    grid-template-columns: 302px 302px 302px 302px;
-    grid-template-rows: 445px ;
-    justify-content: space-between;
-    gap : 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap : 43px;
+    margin-top: 18px;
+    
 }
 .large_cards img {
     object-fit: cover;
@@ -238,16 +246,16 @@ h3 > a {
 .lien_cards_activites {
     text-decoration: none;
     color: black;
-    display: grid;
-    grid-template-columns: 302px 302px 302px 302px;
-    grid-template-rows: 445px;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #d9d9d9dd;
+    display: grid;
+
 }
 
 /*BAS DE PAGE*/
 footer {
     margin-top: 60px;
+    margin-left: 48px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
@@ -255,13 +263,12 @@ footer {
 }
 ul.colonne {
     list-style-type : none;
-    padding: 0px;
 }
-ul.colonne li {
-    padding: 12px;
+    ul.colonne li {
+    padding-bottom: 12px;
 }
 footer h3{
-    padding-left : 40px;
+    padding-left : 70px;
 }
 
 .lien_footer {

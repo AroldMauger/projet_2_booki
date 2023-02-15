@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Booki</title>
-        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Raleway:wght@400;700;800&display=swap" rel="stylesheet">
@@ -12,8 +12,8 @@
 
     <body>
         <header>
-            <span>                
-                 <img class="logo_Booki" src="images/logo/Booki.png" alt="Logo du site Booki"/> 
+            <span id="logo">                
+                 <img class="logo_Booki" src="images/logo/Booki.png" alt="Logo du site Booki"> 
             </span>
             <nav>
                 <ul class="menu_header">
@@ -31,8 +31,8 @@
             <section>
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
-                    <form action="" method="post">
-                        <label for="ville">
+                    <form action="index.html" method="post">
+                        <label>
                             <i class="fa-solid fa-location-dot"></i>
                         </label> 
                         <input class="recherche_ville" type="search" placeholder="Marseille, France">
@@ -40,7 +40,7 @@
                     </form>
             </section>
             <br>
-            <section class="filtres">
+            <div class="filtres">
                 <div class="types_filtres">
                     <span>
                         Filtres
@@ -62,7 +62,7 @@
                         <a class="lien_filtres" href="#">Animaux autorisés</a>
                     </span>
                 </div>
-            </section>
+            </div>
             <div class="info_ville">
                 <i class="fa-solid fa-info"></i>
                  <span>Plus de 500 logements sont disponibles dans cette ville</span>
@@ -71,21 +71,22 @@
                 <div id="annonces_hebergements">
                     <h2>Hébergements à Marseille</h2>
                     <div class="medium_cards">
-                        <a class="lien_cards" href="#">
+                        <a class="lien_cards 1" href="#">
                             <div class="card 1">
-                            <img class="card_image" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo de l'Auberge La Canebière" style="width: 220px; height: 110px;">
-                            <div class="content_medium_card">
-                            <p class="titre_cards">Auberge La Canebière</p>
-                            <p>Nuit à partir de 25<strong>€</strong></p>
-                                <div class="etoiles">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
+                                <img class="card_image" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo de l'Auberge La Canebière" style="width: 220px; height: 110px;">
+                                <div class="content_medium_card">
+                                <p class="titre_cards">Auberge La Canebière</p>
+                                <p>Nuit à partir de 25<strong>€</strong></p>
+                                    <div class="etoiles">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    </div>
                                 </div>
                             </div>
-                    </div>
-                        <a class="lien_cards" href="#">
+                        </a>
+                        <a class="lien_cards 2" href="#">
                             <div class="card 2">
                                 <img class="card_image" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo de l'Hôtel du port" style="width: 220px; height: 110px;">
                                 <div class="content_medium_card">
@@ -100,7 +101,7 @@
                                 </div>
                             </div>
                         </a>
-                        <a class="lien_cards" href="#">
+                        <a class="lien_cards 3" href="#">
                             <div class="card 3">
                                 <img class="card_image" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo de l'Hôtel Les mouettes" style="width: 220px; height: 110px;">
                                     <div class="content_medium_card">    
@@ -115,7 +116,7 @@
                                     </div>
                             </div>
                         </a>
-                        <a class="lien_cards" href="#">
+                        <a class="lien_cards 4" href="#">
                             <div class="card 4">
                                 <img class="card_image" src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo de l'Hôtel de la mer" style="width: 220px; height: 110px;">
                                     <div class="content_medium_card">      
@@ -130,7 +131,7 @@
                                     </div>
                             </div>
                         </a>
-                        <a class="lien_cards" href="#">
+                        <a class="lien_cards 5" href="#">
                             <div class="card 5">
                                 <img class="card_image" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo de l'Auberge Le Panier" style="width: 220px; height: 110px;">
                                     <div class="content_medium_card">    
@@ -145,7 +146,7 @@
                                     </div>
                             </div>
                         </a>
-                        <a class="lien_cards" href="#">
+                        <a class="lien_cards 6" href="#">
                             <div class="card 6">
                                 <img class="card_image" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo de l'Hôtel Chez Amina" style="width: 220px; height: 110px;">
                                     <div class="content_medium_card">  
@@ -160,11 +161,14 @@
                                     </div>  
                             </div>
                         </a>
+                    </div>
                         <a class="afficher_plus" href="#">Afficher plus</a>
-                    </div>  
-                </div> 
+                </div>  
                   <aside class="populaires">
-                    <h2>Les plus populaires</h2>
+                    <div class="header_populaires">
+                        <h2>Les plus populaires</h2>
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
                     <a class="lien_cards" href="#">
                         <div class="smallcard 1">
                             <img class="card_image_small" src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo de l'Hôtel Le soleil du matin" style="width: 137px; height: 144px;">
@@ -251,39 +255,31 @@
         <footer>
             <div class="a_propos">
                 <h3>À propos</h3>
-                <ul class="colonne 1_footer">
-                    <a class="lien_footer" href="#">
+                <a class="lien_footer" href="#">
+                    <ul class="colonne 1_footer">
                         <li>Fonctionnement du site</li>
-                    </a>
-                    <a class="lien_footer" href="#">
                         <li>Conditions générales</li>
-                    </a>
-                    <a class="lien_footer" href="#">
                         <li>Données et confidentialité</li>
-                    </a>
-                </ul>
+                    </ul>
+                </a>
             </div>
             <div class="nos_hebergements">
                 <h3>Nos hébergements</h3>
-                <ul class="colonne 2_footer">
-                    <a class="lien_footer" href="#">
+                <a class="lien_footer" href="#">
+                    <ul class="colonne 2_footer">
                         <li>Charte qualité</li>
-                    </a>
-                    <a class="lien_footer" href="#">
                         <li>Proposer votre hôtel</li>
-                    </a>
-                </ul>
+                    </ul>
+                </a>
             </div>
             <div class="assistance">
                 <h3>Assistance</h3>
-                <ul class="colonne 3_footer">
-                    <a class="lien_footer" href="#">
+                <a class="lien_footer" href="#">
+                    <ul class="colonne 3_footer">
                         <li>Centre d'aide</li>
-                    </a>
-                    <a class="lien_footer" href="#">
-                        <li>Nous contacter</li>
-                    </a>
-                </ul>
+                         <li>Nous contacter</li>
+                    </ul>
+                </a>
             </div>
         </footer>
     </body>
