@@ -23,6 +23,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 li {
@@ -46,7 +47,8 @@ a.lien_header:hover {
 }
 
 main {
-    margin-left: 50px;
+    margin-left: 48px;
+    margin-right:48px;
 }
 /*BOUTON RECHERCHE*/
 
@@ -54,9 +56,10 @@ main {
     background-color: #0065FC;
     color: white;
     padding : 14px 16px 14px 16px;
-    font-weight: bold;
+    font-weight: 700;    
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
+    font-size: 17px;
 }
 label {
     background-color: #F2F2F2;
@@ -69,34 +72,36 @@ label {
     border-right:none;
     padding : 14px 16px 14px 16px;
     font-weight: bold;
+    font-size: 18px;
 }
 /*FILTRES*/
 .filtres {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 10px 10px 10px 10px;
     margin-bottom: 30px;
+    margin-top: 46px;
     font-weight: 700;
+    gap: 30px;
 }
 
 .lien_filtres {
     text-decoration:none;
     color: black;
-    padding : 0px 0px 0px 10px;
-}
-
-.types_filtres i {
-    color:blue;
-}
-.selecteur_filtre {
     border: 2px solid #D9D9D9;
     border-radius: 15px 15px 15px 15px;
-    margin: 20px;
     padding : 10px 10px 10px 10px;
 }
-.selecteur_filtre:hover {
+
+.lien_filtres i {
+    color:blue;
+}
+
+.lien_filtres:hover {
     background-color:#DEEBFF ;
+}
+.selecteur_filtre{
+    padding-left:10px;
 }
 /*INFO VILLE*/
 .info_ville i {
@@ -110,24 +115,28 @@ label {
 }
 /*HEBERGEMENTS*/
 
-#annonces_hebergements i {
+.fa-star{
     color:blue;
 }
-.populaires i {
+.fa-chart-line{
     color:blue;
 }
-.titre_cards {
+.titre_cards_small {
     font-weight: bold;
+}
+.titre_cards_medium {
+    font-weight: bold;
+    font-size: 16px;
 }
 .hebergements_Marseille {
     display: flex;
     margin-top: 39px;
+    gap:40px;
 }
 
 #annonces_hebergements {
     border-radius: 20px;
     background-color: #F2F2F2;
-    margin-right:40px;   
     padding: 42px 40px 46px 40px;
 }
 
@@ -159,6 +168,7 @@ label {
 .lien_cards {
     text-decoration: none;
     color: black;
+    display: flex;
    
     
 }
@@ -171,7 +181,10 @@ label {
     box-shadow: 5px 5px 5px #d9d9d9dd;
     width: 246px;
     height: 199px;
-
+}
+.card>img {
+    width: 246px; 
+    height: 124px;
 }
 
 .card_image {
@@ -197,13 +210,20 @@ label {
     font-size: 80%;
     letter-spacing: 2px;
 }
+.etoilegrise {
+    color : #d9d9d9dd;
+}
+
 .smallcard {
     width: 343px;
     height: 144px;
     box-shadow: 5px 5px 5px #d9d9d9dd;
     display: flex;
     border-radius: 20px;
-
+}
+.smallcard>img {
+    width: 137px; 
+    height: 144px;
 }
 .text_small_card {
   padding : 0px 0px  0px 15px;
@@ -236,16 +256,18 @@ h3 > a {
 }
 
 .large_cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     gap : 43px;
     margin-top: 18px;
 }
+
 .large_cards img {
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
     width: 100%;
     height: 90%;
+
 }
 .large_cards p {
     margin:10px;
@@ -255,18 +277,23 @@ h3 > a {
     color: black;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #d9d9d9dd;
-    display: grid;
-
+    width: 302px;
+    height: 445px;
 }
+.lien_cards_activites>img {
+    width: 302px; 
+    height: 389px;
+}
+
 
 /*BAS DE PAGE*/
 footer {
     margin-top: 60px;
     margin-left: 48px;
+    margin-right: 53px;
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
 }
 ul.colonne {
     list-style-type : none;
@@ -287,4 +314,82 @@ footer h3{
 }
 footer div {
     flex:1;
+} 
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+   
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-right : 50px;
+        margin-left: 50px;
+    }
+    aside {
+        margin-top:30px;
+    }
+    .filtres{
+        font-size: 17px;
+    }
+    .hebergements_Marseille {
+        flex-direction: column;
+    }
+    #annonces_hebergements {
+        justify-content: center;
+    }
+    .smallcards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap:23px;
+    }
+    .smallcard {
+        width: 252px;
+        display: flex;
+    }
+    .smallcard>img {
+        width: 106px;
+        height: 144px;
+    }
+    .lien_cards_activites {
+        height: 267px;
+        width: 182px;
+    }
+    .lien_cards_activites>img {
+        height: 211px;
+        width: 182px;
+    }
+    .large_cards {
+        justify-content: space-around;
+    }
+   
+    .titre_cards_small {
+        font-size: 14px;
+    }
+    .smallcard_comment {
+        font-size: 13px;
+    }
+    
+    footer {
+        padding-top:40px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .hebergements_Marseille {
+        flex-direction: column-reverse;
+        width:100%;
+    }
+    aside {
+        margin:0px;
+        width:auto;
+    }
+    body {
+        margin:none;
+    }
+    main {
+        margin:0px;
+    }
+   
 }
