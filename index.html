@@ -15,20 +15,14 @@
             <span id="logo">                
                  <img class="logo_Booki" src="images/logo/Booki.png" alt="Logo du site Booki"> 
             </span>
-            <nav>
-                <ul class="menu_header">
-                    <li>
-                         <a class="lien_header" href="#annonces_hebergements">Hébergements</a>
-                     </li>
-                     <li>
-                        <a class="lien_header" href="#activites">Activités</a>
-                    </li>
-                </ul>
+            <nav class="menu_header">
+                <a class="lien_header" href="#annonces_hebergements">Hébergements</a>
+                <a class="lien_header" href="#activites">Activités</a>
              </nav>
 
         </header>
         <main>
-            <section>
+            <section id="first_section">
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
                     <form action="index.html" method="post">
@@ -36,37 +30,34 @@
                             <i class="fa-solid fa-location-dot"></i>
                         </label> 
                         <input class="recherche_ville" type="search" placeholder="Marseille, France">
-                        <input class="bouton_rechercher" type="button" value="Rechercher">
+                        <input class="bouton_rechercher" type="button" value="Rechercher"> 
+                        <button class="glass_button" type="button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
                     </form>
             </section>
             <div class="filtres">
                 <span id="name_filtres">
                     Filtres
                 </span>
-                    <div class="card_filtre">
-                        <a class="lien_filtres" href="#">
-                            <i class="fa-solid fa-money-bill-wave"> </i> 
-                            <span class="selecteur_filtre">Économique</span> 
-                        </a>  
-                    </div>
-                    <div class="card_filtre">
-                        <a class="lien_filtres" href="#">
-                            <i class="fa-solid fa-person"></i>
-                            <span class="selecteur_filtre">Familial</span>
-                        </a>
-                    </div>
-                    <div class="card_filtre">
-                        <a class="lien_filtres" href="#">
-                            <i class="fa-solid fa-heart"></i>
-                            <span class="selecteur_filtre">Romantique</span>
-                        </a>
-                    </div>
-                    <div class="card_filtre">
-                        <a class="lien_filtres" href="#">
-                            <i class="fa-solid fa-dog"></i>
-                            <span class="selecteur_filtre">Animaux autorisés</span>
-                        </a>
-                    </div>
+                <div class="card_filtre">
+                    <a class="lien_filtres" href="#">
+                        <i class="fa-solid fa-money-bill-wave"> </i> 
+                        <span class="selecteur_filtre">Économique</span> 
+                    </a>  
+                    <a class="lien_filtres" href="#">
+                        <i class="fa-solid fa-person"></i>
+                        <span class="selecteur_filtre">Familial</span>
+                    </a>
+                    <a class="lien_filtres" href="#">
+                        <i class="fa-solid fa-heart"></i>
+                        <span class="selecteur_filtre">Romantique</span>
+                    </a>
+                    <a class="lien_filtres" href="#">
+                        <i class="fa-solid fa-dog"></i>
+                        <span class="selecteur_filtre">Animaux autorisés</span>
+                    </a>
+                </div>
             </div>
             <div class="info_ville">
                 <i class="fa-solid fa-info"></i>
