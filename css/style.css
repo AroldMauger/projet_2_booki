@@ -33,7 +33,6 @@ header {
 .menu_header {
     display: flex;
     padding : 48px 77px 0px 0px;
-    list-style-type : none;
     margin:10px 10px 10px 10px;  
 }
 
@@ -396,9 +395,7 @@ footer div {
 
 @media screen and (max-width: 768px){
 
-    .hebergements_Marseille {
-        flex-direction: column-reverse;
-    }
+    
     aside {
         margin:0px;
         width:100%;
@@ -502,6 +499,7 @@ footer div {
         margin-top : 24px;        
     }
     .hebergements_Marseille {
+        flex-direction: column-reverse;
         align-items: center; 
     }
    
