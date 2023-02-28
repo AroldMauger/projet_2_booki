@@ -171,7 +171,7 @@ label {
     border-radius: 20px;
     background-color: #F2F2F2;
     padding-left: 37px;
-    padding : 41px 40px 34px 37px;
+    padding : 41px 40px 0px 37px;
 }
 
 .header_populaires {
@@ -228,11 +228,13 @@ label {
 .etoilegrise {
     color : #d9d9d9dd;
 }
-
+.smallcards >a {
+    margin-bottom: 33px;
+}
 .smallcard {
     width: 343px;
     height: 144px;
-    box-shadow: 5px 5px 5px #d9d9d9dd;
+    box-shadow: 3px 3px 3px 3px #d9d9d9dd;
     display: flex;
     border-radius: 20px;
 }
