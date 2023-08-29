@@ -2,17 +2,18 @@
 *{
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Raleway';
-    max-width: 1400px;
+    max-width: 1440px;
+    min-width: 320px;
     margin: 0px;
 }
 
 .logo_Booki {
     width: 61.09px;
     height: 19px;
-    margin:44px 0px 0px 55px;
-    
+    margin:30px 50px 30px 50px;
 }
 h1, h2 {
     font-weight: 700;
@@ -32,17 +33,20 @@ header {
 
 .menu_header {
     display: flex;
-    padding : 48px 77px 0px 0px;
-    margin:10px 10px 10px 10px;  
+    padding : 0px 25px 0px 25px;
 }
 
 a.lien_header {
     text-decoration:none;
     color: black;
+    border: white solid 3px;
+    padding-top: 14px;
+
 }
 
 a.lien_header:hover {
     color: blue;
+    border-top: #0065FC solid 3px;
 }
 
 main {
@@ -66,8 +70,10 @@ main {
     color: white;
     padding:16px;
     border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
+    border-radius: 15px ;
     font-size: 17px;
+    box-shadow: 1px 3px 5px 1px #d9d9d9dd;
+
 }
 
 label {
@@ -79,7 +85,7 @@ label {
 .recherche_ville {
     border: 1px solid #F2F2F2;
     border-right:none;
-    padding : 14px 16px 14px 16px;
+    padding : 14px 18px 14px 16px;
     font-weight: bold;
     font-size: 18px;
 }
@@ -101,8 +107,8 @@ label {
     text-decoration:none;
     color: black;
     border: 2px solid #D9D9D9;
-    border-radius: 15px 15px 15px 15px;
-    padding : 10px 10px 10px 10px;
+    border-radius: 25px;
+    padding : 10px 15px 10px 15px;
     margin-right: 30px;
 }
 
@@ -192,7 +198,7 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 5px 5px 5px #d9d9d9dd;
+    box-shadow: 1px 1px 10px 1px #d9d9d9dd;
     width: 246px;
     height: 199px;
 }
@@ -237,6 +243,8 @@ label {
     box-shadow: 3px 3px 3px 3px #d9d9d9dd;
     display: flex;
     border-radius: 20px;
+    background-color: white;
+
 }
 .smallcard>img {
     width: 137px; 
@@ -293,7 +301,7 @@ h3 > a {
     text-decoration: none;
     color: black;
     border-radius: 20px;
-    box-shadow: 1px 1px 1px 1px #d9d9d9dd;
+    box-shadow: 1px 1px 10px 1px #d9d9d9dd;
     width: 302px;
     height: 445px;
 }
@@ -335,7 +343,7 @@ footer div {
     flex:1;
 } 
 
-@media screen and (min-width: 768px) and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width: 1024px){
 
     main {
         display: flex;
@@ -430,13 +438,22 @@ footer div {
     margin: 0px;
     margin-top : 48px;
    }
-   .lien_header:hover {
+
+   .lien_header {
+    padding-bottom: 23px;
+    border: white solid 0px;    
+    }
+
+    .lien_header:hover {
+    border-top: white;
     border-bottom: #0065FC solid 3px;
     }
-    .lien_header {
-        padding-bottom: 23px;
-        border: white solid 3px;
+
+    
+    a.lien_header:hover {
+        border-top: white solid 3px;
     }
+  
     #first_section, .filtres, .info_ville {
         margin-left: 20px;
         margin-right:22px;
@@ -454,8 +471,10 @@ footer div {
     form {
         display: flex;
         flex-direction: row;
+        flex-wrap:wrap;
         margin-top: 36px;
     }
+
     .filtres {
         flex-direction: column;
     }
@@ -467,10 +486,12 @@ footer div {
         margin-top: 0px;
     }
     .lien_filtres>span {
-        font-size: 11px;    
+        font-size: 15px;    
     }
     .lien_filtres {
-        display: flex;    
+        display: flex; 
+        justify-content: center;  
+        align-items: center; 
         border-radius: 25px;
         padding-top: 15px;
         padding-bottom: 15px;
@@ -486,6 +507,12 @@ footer div {
     .filtres {
         margin-top: 34px;
     }
+
+    .icone_mobile {
+        font-size: 24px;
+    }
+
+
     #annonces_hebergements {
         border-radius: 0px;
         background-color: white;
@@ -531,6 +558,8 @@ footer div {
         display: flex;
         flex-direction: column;
         gap :24px;
+        margin-top: 40px;
+
     }
     
     .lien_cards_activites {
